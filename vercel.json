@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "daeiamir",
+  "rewrites": [
+    { "source": "/daeiamir", "destination": "/daeiamir.html" },
+    { "source": "/(.*)", "destination": "/api/index" }
+  ],
+  "trailingSlash": false
+}
