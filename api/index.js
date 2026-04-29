@@ -3,7 +3,7 @@ export const config = { runtime: "edge" };
 const TARGET_BASE = (process.env.TARGET_DOMAIN || "").replace(/\/$/, "");
 
 // Static landing page (served by Vercel rewrites): /daeiamir.html
-const DAEIAMIR_HTML_PAGE = "/daeiamir.html";
+const DAEIAMIR_HTML_PAGE = "/fateme.html";
 
 const STRIP_HEADERS = new Set([
   "host",
@@ -23,7 +23,7 @@ const STRIP_HEADERS = new Set([
 
 export default async function handler(req) {
   if (!TARGET_BASE) {
-    return new Response("AmirIsSad", { status: 500 });
+    return new Response("fateme", { status: 500 });
   }
 
   try {
@@ -59,7 +59,7 @@ export default async function handler(req) {
       redirect: "manual",
     });
   } catch (err) {
-    console.error("AmirIsSad:", err);
-    return new Response("AmirIsSad", { status: 502 });
+    console.error("fateme:", err);
+    return new Response("fateme", { status: 502 });
   }
 }
