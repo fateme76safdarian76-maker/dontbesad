@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "name": "daeiamir",
+  "name": "fateme",
   "rewrites": [
-    { "source": "/daeiamir", "destination": "/daeiamir.html" },
+    { "source": "/fateme", "destination": "/fateme.html" },
     { "source": "/(.*)", "destination": "/api/index" }
   ],
   "trailingSlash": false
